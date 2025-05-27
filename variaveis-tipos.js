@@ -124,6 +124,10 @@ delete pessoa2.solteiro;
 
 console.log(pessoa2);
 
+let marcaArCondicionado;
+
+console.log(marcaArCondicionado);
+
 //atividade de sala:
 
 //ex1: Crie 5 variáveis usando let , um para cada tipo de dado primitivo (string, number, boolean, undefined, null) e mostre no console
