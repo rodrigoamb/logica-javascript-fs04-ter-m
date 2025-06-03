@@ -98,9 +98,9 @@ const carro = {
   cor: "branco",
 };
 
-function anuncioDeVendaCarro(infoCarro) {
+function anuncioDeVendaCarro(carro) {
   console.log(`
-      Vende-se Carro modelo ${infoCarro.modelo} da marca ${infoCarro.marca}, ano ${infoCarro.ano} da cor ${infoCarro.cor}
+      Vende-se Carro modelo ${carro.modelo} da marca ${carro.marca}, ano ${carro.ano} da cor ${carro.cor}
     `);
 }
 
@@ -125,3 +125,26 @@ console.log(comparacao4);
 console.log(comparacao5);
 console.log(comparacao6);
 console.log(comparacao7);
+
+//escopo global e escopo de bloco e return
+
+const numero1 = 20;
+const numero2 = 30;
+
+function subtraindoNumeros(num1, num2) {
+  console.log("numero1 global: ", numero1);
+  console.log("numero2 global: ", numero2);
+
+  const numero3 = 40;
+  const numero4 = 99;
+
+  console.log("numero3: ", numero3);
+
+  console.log("O resultado da subtração:", num1 - num2);
+
+  return numero4;
+}
+
+const pegandoMeuValor = subtraindoNumeros(10, 3);
+
+console.log("meu dado retornado:", pegandoMeuValor);
