@@ -148,3 +148,52 @@ function subtraindoNumeros(num1, num2) {
 const pegandoMeuValor = subtraindoNumeros(10, 3);
 
 console.log("meu dado retornado:", pegandoMeuValor);
+
+// escrever função anonima
+
+const esseSouEu = function (nome) {
+  console.log(`Meu nome é ${nome}`);
+};
+
+const info = "Rodrigo";
+
+esseSouEu(info);
+
+esseSouEu("Medeiros");
+
+//crie uma funcao anonima que recebe uma largura e profundidade de um terreno e essa funcao deve calcular a área do terreno. Mostre o calculo para 3 terrenos diferentes
+
+const calculoTerreno = function (largura, profundidade) {
+  console.log(
+    `O resultado da área é: ${largura * profundidade} metros quadrados `
+  );
+};
+
+const calculoTerreno2 = function (largura, profundidade) {
+  const result = largura * profundidade;
+  console.log(`O resultado da área é: ${result} metros quadrados `);
+};
+
+const calculoTerreno3 = function (largura, profundidade) {
+  return largura * profundidade;
+};
+
+//executando a primeira
+calculoTerreno(5, 30);
+
+//executando a segunda
+calculoTerreno2(10, 45);
+
+const meuCalculoArea = calculoTerreno3(12, 50);
+
+console.log(`O resultado da área do terreno é: ${meuCalculoArea}`);
+
+// a terceira forma de escrever função (arrow function)
+
+const calculoAreaTriangulo = (base, altura) => {
+  return (base * altura) / 2;
+};
+
+const resultadoAreaTriang = calculoAreaTriangulo(30, 20);
+
+console.log(`a área do triangulo é: ${resultadoAreaTriang} metros quadrados`);
