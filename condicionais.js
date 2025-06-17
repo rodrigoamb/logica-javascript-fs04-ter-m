@@ -206,6 +206,18 @@ console.log(fruta1, fruta2, fruta3);
 
 // ⸻
 
+function comparaValores(dado1, dado2) {
+  if (dado1 === dado2) {
+    return "São iguais";
+  } else {
+    return "São diferentes";
+  }
+}
+
+const meuResultado = comparaValores("10", 10);
+
+console.log(meuResultado);
+
 // ✅ 7. Verificador de temperatura
 
 // Crie uma função verificaTemperatura que receba um número (temperatura) e:
@@ -216,6 +228,20 @@ console.log(fruta1, fruta2, fruta3);
 // Guarde o resultado em uma variável e exiba no console.
 
 // ⸻
+
+function verificaTemperatura(temperatura) {
+  if (temperatura < 15) {
+    console.log("Muito frio");
+  } else if (temperatura > 15 && temperatura < 25) {
+    console.log("Clima agradável");
+  } else {
+    console.log("Muito quente");
+  }
+}
+
+verificaTemperatura(10);
+verificaTemperatura(22);
+verificaTemperatura(34);
 
 // ✅ 8. Cadastro de aluno
 
