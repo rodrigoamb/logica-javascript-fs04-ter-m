@@ -104,12 +104,49 @@ function verificaIdade(objetoPessoa) {
 
 verificaIdade(pessoa);
 verificaIdade(pessoa2);
+
 // ✅ 3. Par ou ímpar em um array
 
 // Crie uma função chamada parOuImpar que receba um array com 5 números.
 // A função deve imprimir se cada número é par ou ímpar.
 
 // ⸻
+
+const lista = [1, 4, 8, 11, 20];
+
+function parOuImpar(array) {
+  if (array[0] % 2 === 0) {
+    console.log("primeiro numero é par");
+  } else {
+    console.log("primeiro numero é impar");
+  }
+
+  if (array[1] % 2 === 0) {
+    console.log("segundo numero é par");
+  } else {
+    console.log("segundo numero é impar");
+  }
+
+  if (array[2] % 2 === 0) {
+    console.log("terceiro numero é par");
+  } else {
+    console.log("terceiro numero é impar");
+  }
+
+  if (array[3] % 2 === 0) {
+    console.log("quarto numero é par");
+  } else {
+    console.log("quarto numero é impar");
+  }
+
+  if (array[4] % 2 === 0) {
+    console.log("quinto numero é par");
+  } else {
+    console.log("quinto numero é impar");
+  }
+}
+
+parOuImpar(lista);
 
 // ✅ 4. Cadastro simples com objeto
 
