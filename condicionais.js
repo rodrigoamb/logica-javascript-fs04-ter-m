@@ -253,6 +253,21 @@ verificaTemperatura(34);
 
 // ⸻
 
+let aluno = {
+  nome: "Fernanda",
+  idade: 18,
+  notas: [8, 9],
+};
+
+function exibeRelatorio(aluno) {
+  let media = (aluno.notas[0] + aluno.notas[1]) / 2;
+  console.log("Nome: " + aluno.nome);
+  console.log("Idade: " + aluno.idade);
+  console.log("Média: " + media);
+}
+
+exibeRelatorio(aluno);
+
 // ✅ 9. Verifica se número está entre os favoritos
 
 // Crie uma função que receba um número e verifique se ele está entre os 3 números favoritos guardados em um array.
@@ -260,9 +275,44 @@ verificaTemperatura(34);
 
 // ⸻
 
+let favoritos = [3, 7, 15];
+
+function verificaNumero(num) {
+  if (num === favoritos[0]) {
+    console.log("Está na lista!");
+  } else if (num === favoritos[1]) {
+    console.log("Está na lista!");
+  } else if (num === favoritos[2]) {
+    console.log("Está na lista!");
+  } else {
+    console.log("Não está na lista");
+  }
+}
+
+verificaNumero(7); // Está
+verificaNumero(10); // Não está
+
 // ✅ 10. Cadastro e validação de produto
 
 // Crie um objeto produto com nome (string), preco (number) e emEstoque (boolean).
 // Crie uma função verificaDisponibilidade que retorne:
 // 	•	“Produto disponível: [nome] - R$[preco]” se emEstoque for true
 // 	•	“Produto indisponível” se for false
+
+let produto = {
+  nome: "Fone de ouvido",
+  preco: 99.9,
+  emEstoque: true,
+};
+
+function verificaDisponibilidade(produto) {
+  if (produto.emEstoque === true) {
+    console.log(
+      "Produto disponível: " + produto.nome + " - R$" + produto.preco
+    );
+  } else {
+    console.log("Produto indisponível");
+  }
+}
+
+verificaDisponibilidade(produto);
