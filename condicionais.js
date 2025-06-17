@@ -27,25 +27,25 @@ if (
 
 //operador ternário
 
-var numero = 7;
-var resultado = numero % 2 === 0 ? "Par" : "Ímpar";
-console.log(resultado); // Ímpar
+// let numero = 7;
+// let resultado = numero % 2 === 0 ? "Par" : "Ímpar";
+// console.log(resultado); // Ímpar
 
-var idadePessoa = 16;
-var statusPessoa = idadePessoa >= 18 ? "Maior de idade" : "Menor de idade";
-console.log(statusPessoa); // Menor de idade
+// let idadePessoa = 16;
+// let statusPessoa = idadePessoa >= 18 ? "Maior de idade" : "Menor de idade";
+// console.log(statusPessoa); // Menor de idade
 
-var logado = true;
-var mensagem = logado ? "Bem-vindo de volta!" : "Faça login para continuar";
-console.log(mensagem); // Bem-vindo de volta!
+// let logado = true;
+// let mensagem = logado ? "Bem-vindo de volta!" : "Faça login para continuar";
+// console.log(mensagem); // Bem-vindo de volta!
 
-var numero = -10;
-var tipo = numero >= 0 ? "Positivo" : "Negativo";
-console.log(tipo); // Negativo
+// let numero = -10;
+// let tipo = numero >= 0 ? "Positivo" : "Negativo";
+// console.log(tipo); // Negativo
 
-var nome = "João";
-var saudacao = nome ? "Olá, " + nome + "!" : "Olá, visitante!";
-console.log(saudacao); // Olá, João!
+// let nome = "João";
+// let saudacao = nome ? "Olá, " + nome + "!" : "Olá, visitante!";
+// console.log(saudacao); // Olá, João!
 
 //exercicios para praticar
 
@@ -59,6 +59,22 @@ console.log(saudacao); // Olá, João!
 
 // ⸻
 
+function saudacao(nome, hora) {
+  if (hora < 12) {
+    return `Bom dia, ${nome}`;
+  } else if (hora > 12 && hora < 18) {
+    return `Boa tarde, ${nome}`;
+  } else {
+    return `Boa noite, ${nome}`;
+  }
+}
+
+const result1 = saudacao("Rodrigo", 7);
+const result2 = saudacao("Mariana", 15);
+const result3 = saudacao("Tiago", 22);
+
+console.log(result1, result2, result3);
+
 // ✅ 2. Verificação de maioridade
 
 // Crie uma função verificaIdade que receba um objeto com as propriedades nome (string) e idade (número).
@@ -68,6 +84,26 @@ console.log(saudacao); // Olá, João!
 
 // ⸻
 
+const pessoa = {
+  nome: "Ana",
+  idade: 22,
+};
+
+const pessoa2 = {
+  nome: "Lucas",
+  idade: 10,
+};
+
+function verificaIdade(objetoPessoa) {
+  if (objetoPessoa.idade >= 18) {
+    console.log(`${objetoPessoa.nome} é maior de idade`);
+  } else {
+    console.log(`${objetoPessoa.nome} é menor de idade`);
+  }
+}
+
+verificaIdade(pessoa);
+verificaIdade(pessoa2);
 // ✅ 3. Par ou ímpar em um array
 
 // Crie uma função chamada parOuImpar que receba um array com 5 números.
