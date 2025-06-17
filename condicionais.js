@@ -153,6 +153,22 @@ parOuImpar(lista);
 // Crie uma variável usuario que armazene um objeto com nome, email e idade.
 // Depois crie uma função exibeUsuario que imprime esses dados em frases completas usando template string.
 
+const usuario = {
+  nome: "Carlos",
+  email: "carlos@gmail.com",
+  idade: 30,
+};
+
+function exibeUsuario(user) {
+  console.log(`
+    O nome do usuário: ${user.nome}
+    O email do usuário: ${user.email}
+    A idade do usuário: ${user.idade}
+    `);
+}
+
+exibeUsuario(usuario);
+
 // ⸻
 
 // ✅ 5. Lista de frutas favoritas
@@ -163,6 +179,22 @@ parOuImpar(lista);
 // (Obs: ainda não use includes ou outros métodos – use apenas if e == com índices fixos).
 
 // ⸻
+
+const frutasFavoritas = ["pera", "morango", "manga"];
+
+function gostaDe(fruta) {
+  if (fruta === "banana" || fruta === "laranja" || fruta === "manga") {
+    return "Está na lista";
+  } else {
+    return "Não está na lista";
+  }
+}
+
+const fruta1 = gostaDe(frutasFavoritas[0]);
+const fruta2 = gostaDe(frutasFavoritas[1]);
+const fruta3 = gostaDe(frutasFavoritas[2]);
+
+console.log(fruta1, fruta2, fruta3);
 
 // ✅ 6. Comparando tipos primitivos
 
