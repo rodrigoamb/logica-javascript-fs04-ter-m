@@ -108,6 +108,16 @@ console.log(tenis);
 
 //Ex1 - Crie uma função chamada mostrarPares que recebe dois parâmetros: inicio e fim. A função deve exibir no console todos os números pares entre inicio e fim.
 
+function mostrarPares(inicio, fim) {
+  for (let i = inicio; i <= fim; i++) {
+    if (i % 2 === 0) {
+      console.log(i);
+    }
+  }
+}
+
+mostrarPares(1, 10);
+
 //Ex2 - Crie uma função chamada contarMaioresQue10 que recebe um array de números como parâmetro e retorna quantos desses números são maiores que 10.
 
 //Ex3 - Crie uma função chamada mostrarTabuada que recebe um número como parâmetro e imprime a tabuada desse número de 1 a 10.
