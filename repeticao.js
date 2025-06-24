@@ -137,6 +137,42 @@ console.log(quantidade);
 
 //Ex3 - Crie uma função chamada mostrarTabuada que recebe um número como parâmetro e imprime a tabuada desse número de 1 a 10.
 
+function mostrarTabuada(numero) {
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`);
+  }
+}
+
+mostrarTabuada(5);
+mostrarTabuada(3);
+mostrarTabuada(7);
+
 //Ex4 - Crie uma função somarImpares que recebe dois números (inicio, fim) e retorna a soma de todos os números ímpares dentro desse intervalo.
 
+function somarImpares(inicio, fim) {
+  let soma = 0;
+
+  for (let i = inicio; i <= fim; i++) {
+    if (i % 2 !== 0) {
+      soma = soma + i;
+    }
+  }
+
+  return soma;
+}
+
+console.log(somarImpares(1, 10));
+
 // Ex5 - Crie uma função chamada verificarVotacao que recebe um array de idades. Para cada idade, a função deve imprimir se a pessoa “Pode votar” (idade ≥ 16) ou “Não pode votar”.
+
+function verificarVotacao(idades) {
+  for (let i = 0; i < idades.length; i++) {
+    if (idades[i] >= 16) {
+      console.log("Pode votar");
+    } else {
+      console.log("Não pode votar");
+    }
+  }
+}
+
+verificarVotacao([12, 16, 22, 14]);
